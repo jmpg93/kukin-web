@@ -1,11 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>My App Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kukin — Próximamente</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #FBF6EF;
+      color: #2E2E2E;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #E2D4BA;
+      padding: 1rem 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #7B5839;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      flex-grow: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #3E8E4D;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #757575;
+      max-width: 400px;
+    }
+
+    .badge {
+      background-color: #E2D4BA;
+      padding: 0.4rem 0.8rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      color: #7B5839;
+      margin-top: 1.5rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #9ba2b1;
+    }
+
+    a {
+      color: #3E8E4D;
+      text-decoration: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1E2D1E;
+        color: #FFFFFF;
+      }
+      h1 { color: #5CA068; }
+      p { color: #C0C0C0; }
+      .badge {
+        background-color: #4A3D2C;
+        color: #F2B66D;
+      }
+      footer { color: #808080; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from GitHub Pages</h1>
-  <p>This site also supports Universal Links!</p>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#politica">Política de privacidad</a>
+  </nav>
+
+  <div class="container">
+    <img class="logo" src="image.png" alt="Logo de Kukin">
+    <h1>Kukin está cocinando</h1>
+    <p>Estamos trabajando en una nueva experiencia para ayudarte a planificar y disfrutar de tus recetas favoritas. ¡Muy pronto estará disponible!</p>
+    <div class="badge">En construcción</div>
+  </div>
+
+  <section id="politica" style="max-width: 700px; margin: 3rem auto; padding: 1rem; font-size: 0.95rem; color: #757575; text-align: left;">
+    <h2 style="color: #3E8E4D;">Política de privacidad</h2>
+    <p>Última actualización: 10 de julio de 2025</p>
+    <p>Esta Política de Privacidad describe cómo Kukin recopila, utiliza y protege la información personal que puedas proporcionar a través de nuestra aplicación.</p>
+    <h3>1. Información que recopilamos</h3>
+    <p>Kukin no recopila información personal identificable como nombre, correo electrónico o ubicación. La aplicación almacena únicamente datos relacionados con tus preferencias de recetas, ingredientes y configuraciones, localmente en tu dispositivo.</p>
+    <h3>2. Uso de la información</h3>
+    <p>Los datos recopilados se utilizan exclusivamente para ofrecer funcionalidades como:
+      <ul>
+        <li>Guardar tus recetas y listas de la compra.</li>
+        <li>Recordar tus preferencias alimentarias y alérgenos.</li>
+        <li>Personalizar la experiencia dentro de la app.</li>
+      </ul>
+    </p>
+    <h3>3. Almacenamiento local</h3>
+    <p>Toda la información se guarda localmente en tu dispositivo. No se envía a servidores externos ni se comparte con terceros.</p>
+    <h3>4. Permisos</h3>
+    <p>La aplicación puede solicitar acceso opcional a ciertas funcionalidades del sistema, como almacenamiento local, únicamente para mejorar la funcionalidad de la app.</p>
+    <h3>5. Cambios en esta política</h3>
+    <p>Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Te notificaremos cualquier cambio importante mediante una actualización en esta sección.</p>
+    <h3>6. Contacto</h3>
+    <p>Si tienes preguntas sobre esta política, puedes escribirnos a <a href="mailto:contacto@kukin.app">contacto@kukin.app</a>.</p>
+    <p>Al utilizar Kukin, aceptas esta Política de Privacidad.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kukin</p>
+  </footer>
 </body>
 </html>
