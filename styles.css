@@ -1,0 +1,159 @@
+:root {
+  --forest-green: #217A5C;
+  --forest-green-low: #E1E7E0;
+  --forest-green-light: #63B88C;
+  --forest-green-dark: #1D5747;
+  --moss-green: #365E4F;
+  --moss-green-light: #63B88C;
+  --moss-green-dark: #6D8962;
+  --beige: #F8F1E7;
+  --beige-light: #FBF6EF;
+  --beige-dark: #D6CFC4;
+  --sand1: #E2D4BA;
+  --sand1-light: #F1E4CC;
+  --sand1-dark: #BCA985;
+  --sand2: #A98A68;
+  --sand2-light: #C9AD8A;
+  --sand2-dark: #826648;
+  --terracotta: #BA6042;
+  --terracotta-light: #D57B5D;
+  --terracotta-dark: #944A30;
+  --egg: #F2B66D;
+  --egg-light: #F7CA8F;
+  --egg-dark: #B57F2C;
+  --dark-text: #2E2E2E;
+  --light-text: #757575;
+  --grey: #D9D9D9;
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #E34C4C;
+
+  --background-color: var(--beige-light);
+  --text-color: var(--dark-text);
+  --nav-background: var(--sand1);
+  --nav-text-color: var(--sand2-dark);
+  --heading-color: var(--forest-green);
+  --paragraph-color: var(--light-text);
+  --badge-background: var(--sand1);
+  --badge-text-color: var(--sand2-dark);
+  --footer-color: #808080;
+  --link-color: var(--forest-green);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1E2D1E;
+    --text-color: #FFFFFF;
+    --nav-background: #4A3D2C;
+    --nav-text-color: var(--egg);
+    --heading-color: #5CA068;
+    --paragraph-color: #C0C0C0;
+    --badge-background: #4A3D2C;
+    --badge-text-color: var(--egg);
+    --footer-color: #808080;
+    --link-color: #5CA068;
+  }
+  .app-store-badge {
+    content: url('https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/es-es?size=200x67');
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  background-color: var(--nav-background);
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--nav-text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  flex-grow: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--paragraph-color);
+  max-width: 400px;
+}
+
+.badge {
+  background-color: var(--badge-background);
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: var(--badge-text-color);
+  margin-top: 1.5rem;
+}
+
+.app-store-badge {
+  width: 160px;
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.85rem;
+  color: var(--footer-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  text-align: left;
+}
+
+h2 {
+  color: var(--nav-text-color);
+  margin-top: 2rem;
+}
+
