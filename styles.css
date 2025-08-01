@@ -28,10 +28,10 @@
   --black: #000000;
   --red: #E34C4C;
 
-  --background-color: var(--beige-light);
+  --background-color: var(--white);
   --text-color: var(--dark-text);
-  --nav-background: var(--sand1);
-  --nav-text-color: var(--sand2-dark);
+  --nav-background: var(--forest-green);
+  --nav-text-color: var(--white);
   --heading-color: var(--forest-green);
   --paragraph-color: var(--light-text);
   --badge-background: var(--sand1);
