@@ -43,9 +43,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1E2D1E;
-    --text-color: #FFFFFF;
-    --nav-background: #4A3D2C;
-    --nav-text-color: var(--egg);
+    --text-color: var(--dark-text);
+    --nav-background: #1E2D1E;
+    --nav-text-color: var(--dark-text);
     --heading-color: #5CA068;
     --paragraph-color: #C0C0C0;
     --badge-background: #4A3D2C;
